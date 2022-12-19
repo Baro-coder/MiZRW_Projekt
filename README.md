@@ -21,37 +21,37 @@ Projekt opracowany na potrzebę realizacji przedmiotu Metody i Zadania Rozpoznaw
 
    - Pobierz i zainstaluj Chocolatey za pomocą podanej komendy:
 
-        ``` code
+        ``` powershell
         @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.      exe"-NoProfile -InputFormat None -ExecutionPolicy Bypass    -Command"iex ((New-Object System.Net.WebClient).DownloadStrin     ('https://chocolatey.org/install.ps1'))" && SET      "PATH=%PATH%%ALLUSERSPROFILE%\chocolatey\bin"
         ```
 
    - Zainstaluj interpreter języka Python za pomocą Chocolatey:
 
-        ``` code
+        ``` powershell
         choco install -y python3
         ```
 
    - Możesz sprawdzić, czy interpreter został poprawnie zainstalowany:
 
-        ``` code
+        ``` powershell
         python -V
         ```
 
 2. Pobranie repozytorium:
 
-    ``` code
+    ``` powershell
     git clone https://github.com/Baro-coder/MiZRW_Projekt
     ```
 
 3. Instalacja wymaganych bilbiotek:
 
-    ``` code
+    ``` powershell
     python -m pip install -r requirements.txt
     ```
 
 4. Uruchomienie programu:
 
-    ``` code
+    ``` powershell
     python accent_recognition.py
     ```
 
